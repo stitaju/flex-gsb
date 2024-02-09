@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Understanding the Flex-GSB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./fav.jpg" />
+    <meta property="og:title" property="og:title" content="Understanding the Flex-Grow, Shrink & Basis (Flex-GSB)"/>   
+    <meta property="og:image" content="./fav.png" />   
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-pagination"></div>
+      <article class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>
+            <dotlottie-player
+              src="https://lottie.host/f44457b1-9ded-413c-9d16-2240feafacb2/hK2n9uIFIQ.json"
+              background="transparent"
+              speed="1"
+              style="display: block"
+              loop
+              autoplay
+            ></dotlottie-player>
+            to this
+            <span class="text-highlight">
+              Knowledge-Sharing Session</span
+            >
+            !
+          </h2>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-col align-center">
+            <h2 class="title-neg">
+              Let's start this session with
+            </h2>
+            <dotlottie-player
+              src="https://lottie.host/9950e938-b118-4480-a40e-af04f6f3acb2/HPVdMjgMop.json"
+              background="transparent"
+              speed="1"
+              style="width: 450px; height: 450px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex-col">
+          <h2 class="question">
+            Do you know, What is
+            <span class="text-highlight">
+              Flex-GSB ?<br />
+            </span>
+          </h2>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-col">
+            <h3 class="text-secondary title">Title:</h3>
+            <h2 class="flex">
+              <h2 class="me">Understanding:</h2>
+              <img
+                class="title-img"
+                src="https://generateblocks.com/wp-content/uploads/2021/09/flex-1024x363.jpg"
+              />
+            </h2>
+            <div class="flex align-center">
+              <h5 class="me">Goal:</h5>
+              Customizing Bootstrap Grid System
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-col align-start">
+            <h3 class="text-secondary title">Content:</h3>
+            <ol class="lower-alpha">
+              <li>
+                <span class="text-highlight">
+                  Problem scenario
+                </span>
+                while using bootstrap grid-system
+              </li>
+              <li>
+                <span class="text-highlight"
+                  >Understanding</span
+                >
+                Flex-GSB
+              </li>
+              <li>
+                <span class="text-highlight"
+                  >Customizing</span
+                >
+                Bootstrap Grid-System
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="swiper-slide section-grid-system">
+          <div class="flex-col align-start">
+            <h3 class="text-secondary title">Problem:</h3>
+            <div class="row">
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>
+                  <span class="me">Col-3:</span>
+                  <span class="text-secondary">
+                    I want to be col-3.5 :(
+                  </span>
+                </h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>
+                  <span class="me">Col-3:</span>
+                  <span class="text-secondary">
+                    I want to be col-2.5 :(
+                  </span>
+                </h5>
+
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-4 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-4</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-2 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-2</h5>
+
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+            </div>
+
+            <h3>Solution:</h3>
+            <div class="row">
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-35 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-3.5</h5>
+                <span class="text-secondary"
+                  >I'm now col-3.5 with flex-gsb :)</span
+                >
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-25 text-grey"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Col-2.5</h5>
+                <span class="text-secondary"
+                  >I'm now col-2.5 with flex-gsb :)</span
+                >
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper-slide flex-col align-start bg-grey pl pe"
+        >
+          <div class="bg-white w-100 interactive-section">
+            <h3 class="mb-sec">Understanding: Flex-GSB</h3>
+            <h4 class="child-label mt-sec" for="child">
+              flex: 0 1 auto | flex: 0 1 auto | flex: 0 1
+              auto
+            </h4>
+            <div class="parent mt-sec">
+              <div
+                class="child child-1"
+                contenteditable
+                spellcheck="false"
+              >
+                Child
+              </div>
+
+              <div
+                class="child child-2"
+                contenteditable
+                spellcheck="false"
+              >
+                Child
+              </div>
+
+              <div
+                class="child child-3"
+                contenteditable
+                spellcheck="false"
+              >
+                Child
+              </div>
+            </div>
+            <form class="radio-group">
+              <div class="row justify-betweeen">
+                <div class="flex-grow col-4">
+                  <h4 class="text-highlight mb">
+                    Flex Default
+                  </h4>
+                  <div class="input-group mb-sec">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option1"
+                      value="option1"
+                      checked
+                    />
+                    <label for="option1"
+                      >display: flex
+                      <span class="text-secondary"> | flex: 0 1 auto  (default)</span>
+                       
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="bootstrap col-4">
+                  <h4 class="text-highlight mb">
+                    Flex Grow
+                  </h4>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option2"
+                      value="option2"
+                    />
+                    <label for="option2">
+                      flex: 1 1 auto
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option3"
+                      value="option3"
+                    />
+                    <label for="option3">
+                      flex:3 1 auto = flex-grow:3 to the
+                      last-child</label
+                    >
+                  </div>
+                </div>
+                <div class="shrink-basis col-4">
+                  <h4 class="text-highlight mb">
+                    Flex Shrink & Basis
+                  </h4>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option4"
+                      value="option4"
+                    />
+                    <label for="option4">
+                      flex: 0 1 1000px to the
+                      last-child</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option5"
+                      value="option5"
+                    />
+                    <label for="option5">
+                      flex: 0 0 1000px to the
+                      last-child</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option6"
+                      value="option6"
+                    />
+                    <label for="option6">
+                      "" with flex-wrap</label
+                    >
+                  </div>
+                </div>
+
+                <div class="bootstrap col-4">
+                  <h4 class="text-highlight mb">
+                    Bootstrap Grid-System
+                  </h4>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option7"
+                      value="option7"
+                    />
+                    <label
+                      class="option7-label"
+                      for="option7"
+                    >
+                      To prevent Flex-grow: _____ ?</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option8"
+                      value="option8"
+                    />
+                    <label for="option8">col-4</label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option9"
+                      value="option9"
+                    />
+                    <label class="option9-label" for="option9">col-3.5</label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="option"
+                      id="option10"
+                      value="option10"
+                    />
+                    <label
+                      class="option10-label"
+                      for="option10"
+                    >
+                      For Responsive: _____ ?</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <section
+            class="section-slide section-grid-system flex-col"
+          >
+            <h4 class="text-secondary mb-sec">
+              Bootstrap-Grid System (Clone)
+            </h4>
+            <div class="resizable-row">
+              <div class="row">
+                <div
+                  class="col-6"
+                  contenteditable
+                  spellcheck="false"
+                >
+                  <h5>Column - 6</h5>
+                </div>
+                <div
+                  class="col-6"
+                  contenteditable
+                  spellcheck="false"
+                >
+                  <h5>Column - 6</h5>
+                </div>
+              </div>
+            </div>
+            <div class="resizable-row">
+              <div class="row">
+                <div
+                  class="col-2"
+                  contenteditable
+                  spellcheck="false"
+                >
+                  <h5>Column - 2</h5>
+                </div>
+                <div
+                  class="col-3"
+                  contenteditable
+                  spellcheck="false"
+                >
+                  <h5>Column - 3</h5>
+                </div>
+                 <div
+                  class="col-4"
+                  contenteditable
+                  spellcheck="false"
+                >
+                  <h5>Column - 4</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-2"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 2</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-25"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 2.5</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-3"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 3</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+              <div
+                class="col-35"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 3.5</h5>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora officia esse
+                aspernatur qui perspiciatis unde? Nisi
+                explicabo odio sunt quia?
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-25"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 2.5</h5>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Sapiente tempore omnis
+                praesentium, tempora eius quis molestias est
+                fugit esse debitis?
+
+                <div class="popover">
+                  .col-25 { <br/>flex: 0 0 20.83%; <br/> width:
+                  20.83%;<br/> }
+                </div>
+              </div>
+
+              <span class="text-grey ms"> Offset-2</span>
+              <div
+                class="col-35 offset-2"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 3.5</h5>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Sapiente tempore omnis
+                praesentium, tempora eius quis molestias est
+                fugit esse debitis?
+
+                                <div class="popover">
+                  .col-35 { <br/>flex: 0 0 29.16%; <br/> width:
+                  29.16%;<br/> }
+                </div>
+              </div>
+              <div
+                class="col-2"
+                contenteditable
+                spellcheck="false"
+              >
+                <h5>Column - 2</h5>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Sapiente tempore omnis
+                praesentium, tempora eius quis molestias est
+                fugit esse debitis?
+
+                   <div class="popover">
+                  .col-2 { <br/>flex: 0 0 16.66%; <br/> width:
+                  16.66%;<br/> }
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+
+          <dotlottie-player
+            src="https://lottie.host/addeaf89-ac51-409f-8f10-95c230b7a5ce/VNkBEaz74q.json"
+            background="transparent"
+            speed="1"
+            style="width: 1000px; height: 1000px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+      </article>
+    </div>
+    <div class="cursor" id="cursor"></div>
+  </body>
+
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/particlesjs@2.2.3/dist/particles.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</html>
