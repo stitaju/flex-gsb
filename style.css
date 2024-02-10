@@ -292,6 +292,11 @@ h2 {
     font-weight: 400;
 }
 
+.syntax{
+    font-size: 3.9rem;
+    min-width: 52rem;
+}
+
 h3 {
     font-size: 2.4rem;
     font-family: "Oswald", sans-serif;
@@ -306,6 +311,9 @@ h3::after {
     padding-bottom: 16px;
     border-bottom: 2px solid var(--primary-color);
     margin-bottom: 16px;
+
+    position: relative;
+    top: -15px;
 }
 
 h4 {
@@ -562,10 +570,6 @@ h4 {
     text-align: center;
 }
 
-.radio-group input[type="radio"]:checked+label {
-    color: var(--primary-color);
-}
-
 @container (max-width: 900px) {
      [class^="col-"] {
         flex: 0 0 100%; 
@@ -603,4 +607,8 @@ h4 {
         top: -100%;
     }
 
+}
+
+.radio-group input[type="radio"]:checked+label {
+    color: var(--primary-color);
 }

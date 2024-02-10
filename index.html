@@ -12,9 +12,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./fav.jpg" />
     <meta property="og:title" property="og:title" content="Understanding the Flex-Grow, Shrink & Basis (Flex-GSB)"/>   
-    <meta property="og:image" content="./fav.png" />   
+    <meta property="og:image" content="./fav.jpg" /> 
+    <link rel="icon" href="./fav.jpg" />
   </head>
   <body>
     <div class="swiper mySwiper">
@@ -67,15 +67,14 @@
           <div class="flex-col">
             <h3 class="text-secondary title">Title:</h3>
             <h2 class="flex">
-              <h2 class="me">Understanding:</h2>
+              <h2 class="me">Understanding: <span class="text-highlight"> Flex-GSB</span></h2>
               <img
                 class="title-img"
                 src="https://generateblocks.com/wp-content/uploads/2021/09/flex-1024x363.jpg"
               />
             </h2>
-            <div class="flex align-center">
-              <h5 class="me">Goal:</h5>
-              Customizing Bootstrap Grid System
+            <div class="flex align-center mt-sec">
+              <h4 class="me">Goal: <span class="text-highlight"> Cloning Bootstrap Grid System</span></h4>
             </div>
           </div>
         </div>
@@ -98,7 +97,7 @@
               </li>
               <li>
                 <span class="text-highlight"
-                  >Customizing</span
+                  >Customizing / Cloning</span
                 >
                 Bootstrap Grid-System
               </li>
@@ -106,9 +105,60 @@
           </div>
         </div>
 
+
+                <div class="swiper-slide">
+          <div class="flex-col align-start">
+            <h3 class="text-secondary title">Background:</h3>
+            <ol class="lower-alpha">
+              <li>
+                 What is
+                <span class="text-highlight">
+                  Flexbox ?
+                </span>
+              </li>
+              <li>
+                Why we need
+                <span class="text-highlight"
+                  >Flex-GSB ?</span
+                >
+                
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+          <div class="swiper-slide">
+            <div class="flex-col">
+          <h3>
+              Syntax: Flex (Shorthand-Property)
+          </h3>
+
+          <h4>
+           flex: [Grow] [Shrink] [Basis]; <br/>
+           flex: [Max] [Min] [Ideal-Size] <br /> <br />
+
+           <div class="syntax row">
+            <div class="col-6">
+               flex: 1; <br/>
+           flex: 0 1; 
+            </div>
+            <div class="col-6">
+               flex: 1 auto; <br/>
+           flex: 0 1 auto; 
+            </div>
+            <div class="col-12">
+              <span class="text-secondary">flex-grow: 0; &nbsp; flex-shrink: 1; &nbsp; flex-basis: auto;</span>
+            </div>
+           </div>
+           </h2>
+           </div>
+        </div>
+
+
         <div class="swiper-slide section-grid-system">
           <div class="flex-col align-start">
-            <h3 class="text-secondary title">Problem:</h3>
+            <h4 class="text-secondary title">a. Problem Scenario:</h3>
             <div class="row">
               <div
                 class="col-3 text-grey"
@@ -214,7 +264,7 @@
               </div>
             </div>
 
-            <h3>Solution:</h3>
+            <h4 class="text-secondary mt-sec">Solution:</h3>
             <div class="row">
               <div
                 class="col-3 text-grey"
@@ -274,7 +324,10 @@
           class="swiper-slide flex-col align-start bg-grey pl pe"
         >
           <div class="bg-white w-100 interactive-section">
-            <h3 class="mb-sec">Understanding: Flex-GSB</h3>
+            <div class="flex">
+                <h3 class="text-secondary mb-sec">b. Understanding: Flex-GSB</h3>
+            </div>
+
             <h4 class="child-label mt-sec" for="child">
               flex: 0 1 auto | flex: 0 1 auto | flex: 0 1
               auto
@@ -410,7 +463,7 @@
                       class="option7-label"
                       for="option7"
                     >
-                      To prevent Flex-grow: _____ ?</label
+                      To prevent flex-grow : _____ ?</label
                     >
                   </div>
                   <div class="input-group">
@@ -442,7 +495,7 @@
                       class="option10-label"
                       for="option10"
                     >
-                      For Responsive: _____ ?</label
+                      For Responsive col-md-*, col-lg-* : _____ ?</label
                     >
                   </div>
                 </div>
@@ -455,8 +508,8 @@
           <section
             class="section-slide section-grid-system flex-col"
           >
-            <h4 class="text-secondary mb-sec">
-              Bootstrap-Grid System (Clone)
+            <h4 class="text-secondary title mb-sec">
+              c. Bootstrap-Grid System (Clone)
             </h4>
             <div class="resizable-row">
               <div class="row">
@@ -611,7 +664,7 @@
             src="https://lottie.host/addeaf89-ac51-409f-8f10-95c230b7a5ce/VNkBEaz74q.json"
             background="transparent"
             speed="1"
-            style="width: 1000px; height: 1000px"
+            style="width: 800px; height: 800px"
             loop
             autoplay
           ></dotlottie-player>
